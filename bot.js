@@ -31,7 +31,7 @@ function getStockInfoBody(error, response, body) {
     let close = lastUpdate[Object.keys(lastUpdate)[3]];
     let volume = lastUpdate[Object.keys(lastUpdate)[4]];
 
-    let tweet = `The MSFT stock price today: Opened at the price of ${ open }, and the highest price was ${ high } and the lowest price point was ${ low }. And finnaly, the closing price point was ${ close }.`;
+    let tweet = `The MSFT stock price today (${Math.floor(Math.random()*100)}): Opened at the price of ${ open }, and the highest price was ${ high } and the lowest price point was ${ low }. And finnaly, the closing price point was ${ close }.`;
     tweetIt(tweet);
 }
 
